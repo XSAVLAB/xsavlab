@@ -27,7 +27,7 @@ const Services = () => {
                         <Button sx={{bgcolor:'black',maxWidth:'fit-content', fontFamily:{xs:"10px",md:'15px'}, color:'common.white'}} endIcon={<EastIcon/>}>Lets Talk</Button>
                         
                     </Box>
-                    <Box display={'flex'} height={'30%'} bgcolor={'black'} borderRadius={'10px'} width={'20%'} ><img  width={'100px'} height={'100px'} src={'/images/computer.webp'}></img></Box>
+                    <Box display={'flex'} height={'30%'} bgcolor={'black'} borderRadius={'10px'} width={'20%'} ><img  width={'100px'} height={'100px'} src={'/images/computer.webp'} alt='computer'></img></Box>
                 </Box>
             </Grid>
             <Grid item md={12} xl={6} >
@@ -46,7 +46,7 @@ const Services = () => {
                         <Button sx={{bgcolor:'black',maxWidth:'fit-content', fontFamily:{xs:"10px",md:'15px'}, color:'common.white'}} endIcon={<EastIcon/>}>Lets Talk</Button>
                         
                     </Box>
-                    <Box display={'flex'} height={'30%'} bgcolor={'black'} borderRadius={'10px'} width={'20%'} ><img  width={'100px'} height={'100px'} src={'/images/computer.webp'}></img></Box>
+                    <Box display={'flex'} height={'30%'} bgcolor={'black'} borderRadius={'10px'} width={'20%'} ><img  width={'100px'} height={'100px'} src={'/images/computer.webp'} alt='computer'></img></Box>
                 </Box>
             </Grid>
             

@@ -3,7 +3,7 @@ import Typography  from '@mui/material/Typography';
 import Grid  from '@mui/material/Grid';
 import Card  from '@mui/material/Card';
 import CardContent  from '@mui/material/CardContent';
-import GradientButton from '@/app/components/GradientButton';
+import GradientButton from '../components/GradientButton';
 
 const CardItem =({icon,title,img}) => {
   return(

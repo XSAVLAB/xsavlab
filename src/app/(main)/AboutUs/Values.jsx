@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box'
 import React from 'react'
-import { Typography } from '@mui/material'
+import Typography  from '@mui/material/Typography'
 
 const Values = () => {
   return (
