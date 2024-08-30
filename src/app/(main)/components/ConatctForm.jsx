@@ -10,7 +10,7 @@ const ConatctForm = () => {
     <Box component='section'   display='flex' flexDirection={{xs:"column",lg:'row'}} bgcolor='blue' color='white'  px={{sm:3,md:10,xl:20 }} py={10} gap={{md:'24px',xl:'400px'}}>
       <Box display='flex' flexDirection='column' gap={4}>
         <Typography variant='h3' fontWeight='800' >Let’s build something great together</Typography>
-        <Typography variant='body'>We believe in turning ideas into reality and we're ready to join your journey. Reach out to us and let's start discussing your project.</Typography>
+        <Typography variant='body'>We believe in turning ideas into reality and we &apos;re ready to join your journey. Reach out to us and let &apos;s start discussing your project.</Typography>
       </Box>
       
       <Box component='form' display='flex' flexDirection='column'  width='100%'  gap={5}>
