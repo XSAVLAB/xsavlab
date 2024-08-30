@@ -20,7 +20,7 @@ const CardItem =({icon,title,img}) => {
 const Hero = () => {
   return (
     <Box component='section' display='flex' flexDirection='column' minWidth='100vw' minHeight='90vh' bgcolor='#18141E' mt={8}>
-      <Box  sx={{backgroundImage:`url(/aboutbg.jpg)`, textAlign:'center',display:'flex', flexDirection:'column',gap:4, color:'white', width: '100%',height: '60vh', backgroundSize: 'cover', backgroundPosition:'center', backgroundRepeat:'no-repeat',justifyContent:'center',alignItems:'center'}}>
+      <Box  sx={{backgroundImage:`url(images/aboutbg.jpg)`, textAlign:'center',display:'flex', flexDirection:'column',gap:4, color:'white', width: '100%',height: '60vh', backgroundSize: 'cover', backgroundPosition:'center', backgroundRepeat:'no-repeat',justifyContent:'center',alignItems:'center'}}>
         <Typography variant='h3' fontWeight='900' maxWidth='900px'>We are expert professionals. We can turn your business idea into a real software solution.</Typography>
         <Typography variant='body2' maxWidth='884px'>XsavLab specializes in custom software development, creating and evolving solutions and products<br/>
                                                     to fuel business growth. With decades of development experience, a deep understanding of global markets,<br/>
@@ -31,40 +31,40 @@ const Hero = () => {
       <Box   sx={{bgcolor:'#18141E', minWidth:'100%', minHeight:'30vh',display:'flex',justifyContent:'center', px:7, py:7 }}>
         <Grid container spacing={10} display='flex'    justifyContent="center" alignItems='center'>
           <Grid item xs={3}>
-            <CardItem icon='/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
+            <CardItem icon='/images/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
           </Grid>
           <Grid item xs={3}>
-            <CardItem icon='/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
+            <CardItem icon='/images/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
           </Grid>
           <Grid item xs={3}>
-            <CardItem icon='/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
+            <CardItem icon='/images/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
           </Grid>
           <Grid item xs={3}>
-            <CardItem icon='/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
+            <CardItem icon='/images/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
           </Grid>
           <Grid item xs={3}>
-            <CardItem icon='/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
+            <CardItem icon='/images/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
           </Grid>
           <Grid item xs={3}>
-            <CardItem icon='/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
+            <CardItem icon='/images/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
           </Grid>
           <Grid item xs={3}>
-            <CardItem icon='/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
+            <CardItem icon='/images/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
           </Grid>
           <Grid item xs={3}>
-            <CardItem icon='/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
+            <CardItem icon='/images/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
           </Grid>
           <Grid item xs={3}>
-            <CardItem icon='/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
+            <CardItem icon='/images/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
           </Grid>
           <Grid item xs={3}>
-            <CardItem icon='/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
+            <CardItem icon='/images/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
           </Grid>
           <Grid item xs={3}>
-            <CardItem icon='/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
+            <CardItem icon='/images/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
           </Grid>
           <Grid item xs={3}>
-            <CardItem icon='/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
+            <CardItem icon='/images/icon-success-grey.png' title={'2023 Global Clutch Winner'} img={'https://diffco.us/wp-content/themes/diffconew/static-template/build/images/top-developers/clutch-logo.png'}/>
           </Grid>
         </Grid>
         

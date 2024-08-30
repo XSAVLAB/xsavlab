@@ -4,7 +4,7 @@ import Typography  from '@mui/material/Typography'
 
 const Values = () => {
   return (
-    <Box  component='section' minHeight={'100vh'} minWidth='100vw' pt={6} sx={{backgroundImage:`url(/values.jpg)`, color:'white', backgroundSize: 'cover', backgroundPosition:'center', backgroundRepeat:'no-repeat'}} >
+    <Box  component='section' minHeight={'100vh'} minWidth='100vw' pt={6} sx={{backgroundImage:`url(/images/values.jpg)`, color:'white', backgroundSize: 'cover', backgroundPosition:'center', backgroundRepeat:'no-repeat'}} >
         <Typography variant='h4' fontWeight={800} textAlign='center'> Our Values</Typography>
         <Box display='flex' justifyContent='center' gap={3}>
             <Box display='flex' flexDirection='column' padding='20px'></Box>
