@@ -10,7 +10,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Tooltip from '@mui/material/Tooltip';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 const navlinks: string[] = ['AboutUS','Cases','Services','Solution','Client','Blogs','Contact']
@@ -35,12 +34,12 @@ const Navbar: React.FC = () => {
       sx={{
         backgroundColor: 'rgba(0, 0, 0, 0.2)',
         backdropFilter: 'blur(25px)',
-        padding: { xs: '5px', md: '0 5px', xl: '0 100px' },
+        padding: { xs: '5px', md: '0 5px', xl: '0 20px' },
       }}
     >
       <Toolbar sx={{ justifyContent: 'space-between' }} disableGutters>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <Typography href='/'  component="a" className='icon' fontSize={{ xs: '25px', lg: '35px', xl: '40px' }}> Xsav Lab </Typography>
+          <Typography href='/'  component="a" className='icon' fontSize={{ xs: '25px', lg: '30px', xl: '40px' }}> Xsav Lab </Typography>
         </Box>
 
         {/* Navigation Links */}

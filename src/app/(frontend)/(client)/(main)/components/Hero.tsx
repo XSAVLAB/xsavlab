@@ -21,7 +21,7 @@ const Hero :FC = () => {
         <Box component='section' className="container" sx={{flexDirection:{xs:'column',lg:'row'}}} >
             <Box component='div' className="itemcontainer"  sx={{minWidth:'55%'}}>
                 <motion.div style={{x:quotesanim}} ref={ref}>
-                    <Typography py={{xs:'50px' ,md:'10px',lg:'150px'}} fontSize={{xs:'40px',md:'30px',lg:'30px',xl:'55px '}} className='quotes'>Transform your vision into reality with <br/> <span className="textgradient">Xsav Labs</span> <br/>where<br/> <span className="textgradient">top-tier software development meets <br/>unparalleled expertise.</span> </Typography>
+                    <Typography pt={{xs:'50px' ,md:'10px',lg:'150px'}} fontSize={{xs:'40px',md:'30px',lg:'30px',xl:'55px '}} className='quotes'>Transform your vision into reality with <br/> <span className="textgradient">Xsav Labs</span> <br/>where<br/> <span className="textgradient">top-tier software development meets <br/>unparalleled expertise.</span> </Typography>
                 </motion.div>
                 <Box component='div' className='boxcontainer'>
                     <Box component='div' className="transparentbox">kernvk</Box>

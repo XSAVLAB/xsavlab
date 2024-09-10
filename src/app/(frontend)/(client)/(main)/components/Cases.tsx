@@ -26,7 +26,7 @@ const Cases :FC = () => {
         <Box component='div' className="caseoutercontainer" px={{xs:'20px',lg:'400px'}}>
 
           {data.map((item,index) => (
-               <Box component='div' className='cases' width={'1200px'} height={'550px'} flexDirection={{xs:'column-reverse',lg:'row'}} sx={{background: item.bgcolor}}>
+               <Box component='div' className='cases' width={{xs:'100%',md:'900px',xl:'1200px'}} height={'fit-content'} pb={1} flexDirection={{xs:'column-reverse',lg:'row'}} sx={{background: item.bgcolor}}>
                <Box component='div' className="introsec">
                  <Box component='img' width='30%' src={item.companylogo} alt="logo"/>
                  <Box component='div' className="featurecontainer">

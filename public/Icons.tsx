@@ -6,10 +6,7 @@ interface IconProps {
   size?: string;
 }
 
-interface IconProps {
-  color?: string;
-  size?: string;
-}
+
 
 export const Facebook: FC<IconProps> = ({ color = 'currentColor', size = '20px' }) => {
   return (

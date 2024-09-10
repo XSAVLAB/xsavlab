@@ -11,6 +11,9 @@ const customtext={
       color:'white',
       fontSize:'20px',
     },
+    fieldset:{
+      border:'5px solid white',
+    },
     '&:before':{
       'bottom-border' : '3px solid white',
     }

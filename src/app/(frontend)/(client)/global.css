@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
     display: flex !important;
     flex-direction: column ;
     min-width: 100vw;
-    gap: 30px;
+    gap: 10px;
     align-items: center;
     text-align: center;
     color: black;
@@ -64,9 +64,9 @@ body::-webkit-scrollbar {
     overflow: hidden;
     padding-top: 64px !important;
     display: flex;
-    min-width: 100vw;
+    width: 100vw;
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
     background-color: rgb(0,33,78);
     color: white;
     padding: 0;
@@ -82,7 +82,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4;
+    gap: 4px;
     min-height: 100%;
 }
 .textgradient{
@@ -94,11 +94,11 @@ body::-webkit-scrollbar {
 .container  .boxcontainer{
     display: flex;
     flex-direction: row ;
-    gap: 32px;
+    gap: 10px;
 }
 .transparentbox{
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 200px;
+    min-height: 200px;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(25px);
     box-sizing: border-box;
@@ -114,10 +114,11 @@ body::-webkit-scrollbar {
     padding: 4px 12px !important;
     color: black;
     font-weight: 900 !important;
+    font-size: 8px !important;
 }
 .servicecard{
-    max-width: 450px !important;
-    max-height: 530px !important;
+    max-width: 300px !important;
+    max-height: 350px !important;
     background-color: rgba(var(--service-card-bg), 0.5);
     overflow: hidden;
     backdrop-filter: blur(25px);
@@ -131,7 +132,7 @@ body::-webkit-scrollbar {
 }
 .servicecardimg{
     width: 100%;
-    height: 200px;
+    height: 100px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     overflow: hidden; 
@@ -219,7 +220,11 @@ body::-webkit-scrollbar {
     border-radius: 20px;
 }
 
-.comapnylogo:hover{
+.companylogo{
+    width: 150px;
+}
+
+.companylogo:hover{
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
@@ -230,7 +235,7 @@ body::-webkit-scrollbar {
 /* Cases */
 .caseoutercontainer{
     width: 100%;
-    padding: 200px !important;
+    padding: 30px 200px !important;
     box-sizing: border-box;
     color: var(--text-color);
     display: flex;
@@ -242,12 +247,12 @@ body::-webkit-scrollbar {
     position: relative;
     display: flex;
     border-radius: 30px;
-    padding: 30px;
+    padding: 0px;
 }
 .featurecontainer{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 6px;
 }
 .features{
     border: 3px solid white !important ;
@@ -256,10 +261,10 @@ body::-webkit-scrollbar {
 }
 .introsec{
     box-sizing: border-box;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 25px !important;
+    gap: 10px !important;
     text-align: left;
 }
 .contactcontainer{
@@ -268,4 +273,10 @@ body::-webkit-scrollbar {
     min-width: 100%;
     color: white;
     box-sizing: border-box !important;
+}
+
+/* footer */
+.links{
+    font-size: 16px;
+    font-weight: 700;
 }

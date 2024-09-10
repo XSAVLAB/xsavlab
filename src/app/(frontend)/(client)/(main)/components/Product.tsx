@@ -32,7 +32,7 @@ const Product = () => {
             <Typography className="productheading" fontSize={{xs:'20px',md:'24px',lg:'32px',xl:'40px'}}>Products we developed are used by</Typography>
             <Box display='flex' flexWrap='wrap' justifyContent='center' columnGap={1} rowGap={6}   boxSizing='border-box'>
                 {clients.map((logo,index) => (
-                    <Box component='img' className="comapnylogo" key={`client_${index}`} src={logo} alt="company logo" />
+                    <Box component='img' className="companylogo" key={`client_${index}`} src={logo} alt="company logo" />
                 ))}
             </Box>
         </Box>
@@ -41,11 +41,11 @@ const Product = () => {
                 <Typography className="productheading" fontSize={{xs:'20px',md:'24px',lg:'32px',xl:'40px'}}>How we can help you</Typography>
                 <Typography color="black">Using powerful, industry-specific software solutions, our team can help you achieve your business goals.</Typography>
             </Box>
-            <Box display='flex'  gap={{xs:1,md:3,lg:4,xl:5}} justifyContent={'center'} flexWrap='wrap' color='black'>
+            <Box display='flex'  gap={{xs:1,md:3}} justifyContent={'center'} flexWrap='wrap' color='black'>
                 {categories.map((item,index) =>(
                     <Box component='div' className="categories" key={index} >
                         <Box component='img' src={item.logo} alt={item.name} />
-                        <Typography sx={{fontSize:'16px', fontWeight:'600',wordWrap:'normal',lineHeight:'1'}} >{item.name}</Typography>
+                        <Typography sx={{fontSize:'12px', fontWeight:'600',wordWrap:'normal',lineHeight:'1'}} >{item.name}</Typography>
                     </Box>
                 ))}
             </Box>
