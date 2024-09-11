@@ -9,10 +9,11 @@ import IconButton from '@mui/material/IconButton';
 import Toolbar from '@mui/material/Toolbar';
 import Tooltip from '@mui/material/Tooltip';
 import MenuIcon from '@mui/icons-material/Menu';
-import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
+// import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
+import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import { useRouter } from 'next/navigation';
 
-const navlinks: string[] = ['AboutUS','Cases','Services','Solution','Client','Blogs','Contact']
+const navlinks: string[] = ['Home', 'Services', 'Solution', 'Client', 'Blogs', 'About us']
 
 const Navbar: React.FC = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
@@ -32,21 +33,21 @@ const Navbar: React.FC = () => {
     <AppBar
       position="fixed"
       sx={{
-        backgroundColor: 'rgba(0, 0, 0, 0.2)',
+        backgroundColor: '#001a3e90',
         backdropFilter: 'blur(25px)',
-        padding: { xs: '5px', md: '0 5px', xl: '0 20px' },
+        padding: { xs: '1px', md: '0 5px', xl: '6px 20px' },
       }}
     >
-      <Toolbar sx={{ justifyContent: 'space-between' }} disableGutters>
+      <Toolbar disableGutters>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <Typography href='/'  component="a" className='icon' fontSize={{ xs: '25px', lg: '30px', xl: '40px' }}> Xsav Lab </Typography>
+          <Typography href='/' component="a" className='logo-xsav' fontSize={{ xs: '25px', lg: '30px', xl: '40px' }}> Xsav Lab </Typography>
         </Box>
 
         {/* Navigation Links */}
 
-        <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 3 }}>
-          {navlinks.map((item,index) => (
-              <Button
+        <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 7 }}>
+          {navlinks.map((item, index) => (
+            <Button
               key={index}
               href={`/${item}`}
               variant="text"
@@ -82,7 +83,8 @@ const Navbar: React.FC = () => {
         </Box>
 
         {/* Let’s Chat Button */}
-        <Button variant="contained" endIcon={<ChatBubbleOutlineIcon />} sx={{borderRadius:1.5, backgroundColor: 'primary.light', color: 'common.white' }}>
+        <Button variant="contained" endIcon={<QuestionAnswerIcon />} className="btn-lc">
+          {/* <Button variant="contained" endIcon={<ChatBubbleOutlineIcon />} sx={{ borderRadius: 1.5, backgroundColor: 'primary.light', color: 'common.white' }}> */}
           Let’s chat
         </Button>
 
@@ -114,8 +116,8 @@ const Navbar: React.FC = () => {
             gap: '10px',
           }}
         >
-          {navlinks.map((item,index) => (
-            <Button  href={`/${item}`} key={index} variant="text" color="inherit">
+          {navlinks.map((item, index) => (
+            <Button href={`/${item}`} key={index} variant="text" color="inherit">
               {item}
             </Button>
           ))}

@@ -42,24 +42,29 @@ body::-webkit-scrollbar {
     text-align: center !important;
 }
 
-  /* RGB(95,48,140) #5F308C */
-  /* RGB(114,48,140) #72308C */
-/* navbar */
-.icon{
-    font-weight: 900 !important;
-    margin-left: 8px !important;
+
+/* Header Section */
+.logo-xsav{
+    font-weight: 500 !important;
+    margin-left: 42px !important;
+    margin-right: 300px !important;
     transition: ease;
     text-decoration: none;
     color: white;
-}
-.icon:hover{
-    color: rgb(125, 134, 255);
-    text-shadow: 0 0 30px blue;
-    box-sizing: 0 0 40px green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* first color : RGB(2,254,255) , second color : RGB(50,182,236) ,third color : RGB(0,66,139) */
-/* Hero */
+.btn-lc{
+    background-color:#368bd5 !important;
+    color: white !important;
+    padding: 2px 14px !important;
+    margin-left: 20px !important;
+    border-radius: 15px !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    text-decoration: none;
+}
+/* Hero Section */
 .container{
     overflow: hidden;
     padding-top: 64px !important;
@@ -274,7 +279,6 @@ body::-webkit-scrollbar {
     color: white;
     box-sizing: border-box !important;
 }
-
 /* footer */
 .links{
     font-size: 16px;
