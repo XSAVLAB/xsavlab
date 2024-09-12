@@ -42,56 +42,62 @@ body::-webkit-scrollbar {
     text-align: center !important;
 }
 
-  /* RGB(95,48,140) #5F308C */
-  /* RGB(114,48,140) #72308C */
-/* navbar */
-.icon{
-    font-weight: 900 !important;
-    margin-left: 8px !important;
+
+/* Header Section */
+.logo-xsav{
+    font-weight: 500 !important;
+    margin-left: 42px !important;
+    margin-right: 300px !important;
     transition: ease;
     text-decoration: none;
     color: white;
-}
-.icon:hover{
-    color: rgb(125, 134, 255);
-    text-shadow: 0 0 30px blue;
-    box-sizing: 0 0 40px green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* first color : RGB(2,254,255) , second color : RGB(50,182,236) ,third color : RGB(0,66,139) */
-/* Hero */
-.container{
+.btn-lc{
+    background-color:#368bd5 !important;
+    color: white !important;
+    padding: 2px 14px !important;
+    margin-left: 20px !important;
+    border-radius: 15px !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    text-decoration: none;
+}
+/* Hero Section */
+.hero-container {
     overflow: hidden;
-    padding-top: 64px !important;
+    padding-top: 30px !important;
     display: flex;
-    width: 100vw;
     position: relative;
     height: 100vh;
-    background-color: rgb(0,33,78);
-    color: white;
-    padding: 0;
+    background: linear-gradient(225deg, rgb(0 255 252), rgb(98 208 253), rgb(0 88 185));
+    padding: 50px;
 }
-.quotes{
-    font-size: 55px ;
-    font-weight: 700 !important;
-    padding: 20px;
-    text-align: center;
 
+.hero-container-img {
+    margin-left: 100px;
+    margin-top: 60px;
 }
-.itemcontainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    min-height: 100%;
+
+.hero-container-text {
+    margin-left: 100px;
+    margin-top: 60px;
+    font-weight: 900 !important;
 }
+
+/* .hero-text-main{
+    margin-left:100px;
+    margin-top:60px;
+}
+.hero-text-sub{
+    margin-left:100px;
+    margin-top:60px;
+} */
 .textgradient{
     background: linear-gradient(90deg, rgb(2,254,255),rgb(50,182,236),rgb(0,66,139) );
-    background-clip: unset;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
-.container  .boxcontainer{
+.hero-container-box{
     display: flex;
     flex-direction: row ;
     gap: 10px;
@@ -278,18 +284,6 @@ body::-webkit-scrollbar {
     justify-content: center;
     color: white;
     box-sizing: border-box !important;
-}
-.clientsec{
-    display: flex;
-    gap: 14px;
-}
-
-/* contact */
-.messagebutton{
-    width: 300px;
-    font-size: 10px !important;
-    background-color: white !important;
-    color: black !important;
 }
 
 /* footer */
