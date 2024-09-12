@@ -60,7 +60,7 @@ const Service:FC = () => {
             <Typography variant='h3' fontWeight='900' >Our Services</Typography>
             <Grid container spacing={4} sx={{justifyContent:'center'}}>
                 {data.map((item,index) => (
-                    <Grid component='div' className='servicecard' size={{xs:12,md:6,}} >
+                    <Grid component='div' className='servicecard' size={{xs:12,md:6,}} key={index} >
                      <Box component='div' className='servicecardimg' sx={{background:`url(${item.img}) no-repeat center/cover`}} />
                         <Box display='flex' flexDirection='column' gap={2} textAlign='left' alignItems='left' padding='10px 10px' >
                             <Typography variant='h6' fontWeight='900' >{item.title}</Typography>

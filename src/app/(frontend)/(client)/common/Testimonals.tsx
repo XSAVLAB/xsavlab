@@ -9,7 +9,7 @@ const data = [
     {
         logo:<FlashGrid color='white'/>,
         comment:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cupiditate odio voluptas consequatur neque id eveniet ducimus ratione reprehenderit odit?',
-        bgcolor:'linear-gradient(90deg, #7a2e8a, #57237c);',
+        background:'linear-gradient(90deg, #7a2e8a, #57237c);',
         client:{
             img:'https://diffco.us/wp-content/uploads/2024/08/art.webp',
             name:'Art Daynela',
@@ -20,7 +20,7 @@ const data = [
     {
         logo:<FlashGrid color='white'/>,
         comment:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cupiditate odio voluptas consequatur neque id eveniet ducimus ratione reprehenderit odit?',
-        bgcolor:'linear-gradient(90deg, #7a2e8a, #57237c);',
+        background:'linear-gradient(90deg, #7a2e8a, #57237c);',
         client:{
             img:'https://diffco.us/wp-content/uploads/2024/08/art.webp',
             name:'Art Daynela',
@@ -31,7 +31,7 @@ const data = [
     {
         logo:<FlashGrid color='white'/>,
         comment:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cupiditate odio voluptas consequatur neque id eveniet ducimus ratione reprehenderit odit?',
-        bgcolor:'linear-gradient(90deg, #7a2e8a, #57237c);',
+        background:'linear-gradient(90deg, #7a2e8a, #57237c);',
         client:{
             img:'https://diffco.us/wp-content/uploads/2024/08/art.webp',
             name:'Art Daynela',
@@ -65,7 +65,7 @@ const Testimonals = () => {
                 <Box component='div' className='reviewcontainer'>
 
                     {data.map((item,index) => (
-                        <Box  component='div' className='testimonalcard'  sx={{background: item.bgcolor}} >
+                        <Box  component='div' className='testimonalcard'  sx={{background: item.background}} >
                         {item.logo}
                         <Typography > <span ><Quotes/></span>{item.comment}</Typography>
                         <Box display='flex' gap={2}>

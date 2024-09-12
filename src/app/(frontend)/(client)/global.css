@@ -16,7 +16,7 @@
 body{
     margin: 0;
     box-sizing: border-box;
-    
+    overflow: auto;  
 }
 body::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
@@ -159,7 +159,6 @@ body::-webkit-scrollbar {
     min-height: 300px;
     padding: 30px;
     background-color: black;
-
     justify-content:center ;
     position: relative;
 }
@@ -244,10 +243,14 @@ body::-webkit-scrollbar {
 }
 .cases{
     box-sizing: border-box;
-    position: relative;
     display: flex;
     border-radius: 30px;
-    padding: 0px;
+    height: fit-content;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 100px;
 }
 .featurecontainer{
     display: flex;
@@ -271,8 +274,22 @@ body::-webkit-scrollbar {
     display: flex;
     min-height: 70vh;
     min-width: 100%;
+    align-items: center;
+    justify-content: center;
     color: white;
     box-sizing: border-box !important;
+}
+.clientsec{
+    display: flex;
+    gap: 14px;
+}
+
+/* contact */
+.messagebutton{
+    width: 300px;
+    font-size: 10px !important;
+    background-color: white !important;
+    color: black !important;
 }
 
 /* footer */
