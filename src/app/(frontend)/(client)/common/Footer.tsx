@@ -10,7 +10,7 @@ import {FC} from 'react'
 
 const Footer:FC = () => {
   return (
-    <Box component='section' display='flex' maxWidth={'100vw'}  flexDirection='column' pt={5} px={{xs:12,lg:1,xl:5}} sx={{ background: 'linear-gradient(90deg, #01f9d7, #159fc5, #2e31b5)'}}>
+    <Box component='section' className='footercont'>
       <Box display='flex' flexDirection={{xs:'column',lg:'row'}} textAlign='left' gap={{xs:5,xl:0}} justifyContent='space-evenly' pb={10} borderBottom='2px solid white' color='white'>
           
         <Box display='flex' flexDirection='column' textAlign={{xs:'left',lg:'center'}} gap={2} minWidth='200px'>

@@ -1,7 +1,7 @@
 'use client';
 
 import  Typography from '@mui/material/Typography'
-import Grid from '@mui/material/Grid2'
+import Grid from '@mui/material/Grid'
 import Box  from '@mui/material/Box'
 import {FC} from 'react'
 import Button from '@mui/material/Button'
@@ -55,27 +55,31 @@ const data=[
 
 const Service:FC = () => {
   return (
-    <Box component='section' className='maincontainer' sx={{ position: 'relative', backgroundImage: 'url(/images/ai-generated-8211245_1280.webp)', backgroundSize: 'cover', backgroundPosition: 'center','&:after': {content: '""',position: 'absolute',top: 0,left: 0,width: '100%',height: '100%',background: 'rgba(0, 0, 0, 0.5)',backdropFilter: 'blur(8px)',  zIndex: 1,},}}>
-        <Box component='div' sx={{position: 'relative',zIndex: 2,  color: 'white', px:20,display:'flex',flexDirection:'column', justifyContent:'center', gap:7, alignItems:'center' }}>
-            <Typography variant='h3' fontWeight='900' >Our Services</Typography>
-            <Grid container spacing={4} sx={{justifyContent:'center'}}>
-                {data.map((item,index) => (
-                    <Grid component='div' className='servicecard' size={{xs:12,md:6,}} key={index} >
-                     <Box component='div' className='servicecardimg' sx={{background:`url(${item.img}) no-repeat center/cover`}} />
-                        <Box display='flex' flexDirection='column' gap={2} textAlign='left' alignItems='left' padding='10px 10px' >
-                            <Typography variant='h6' fontWeight='900' >{item.title}</Typography>
-                                <Box display='flex' flexWrap='wrap' gap={1} >
-                                    {item.tech.map((tec,index) => (
-                                        <Typography  className='technologies' key={index}>{tec}</Typography>
-                                    ))}
+    <Box component='section' className='service-main-conatiner'>
+        <Box component='div' className='service-container'>
+            <Typography className='service-heading'>Our Services</Typography>
+            <Grid container className='grid-container'  spacing={3}>
+                {data.map((item,index) =>(
+                    <Grid item xs={12} md={6} lg={4} key={index}>
+                        <Box component='div' className='servicecard'>
+                            <Box component='div' className='servicecardimg' sx={{background:`url(${item.img}) no-repeat center/cover`}} />
+                                <Box component='div' className='service-card-content' >
+                                    <Typography variant='h6' fontWeight='900' >{item.title}</Typography>
+                                        <Box display='flex' flexWrap='wrap' gap={1} >
+                                            {item.tech.map((tec,index) => (
+                                                <Typography  className='technologies' key={index}>{tec}</Typography>
+                                            ))}
+                                        </Box>
+                                    <Typography variant='subtitle2' fontSize='12px'>{item.desc}</Typography>
+                                    <Button  variant='contained' className='explorebutton' sx={{fontSize:'10px'}} endIcon={<ArrowLeft/>}>Explore</Button>
                                 </Box>
-                            <Typography variant='subtitle2' fontSize='12px'>{item.desc}</Typography>
-                            <Button  variant='contained' className='explorebutton' sx={{fontSize:'10px'}} endIcon={<ArrowLeft/>}>Explore</Button>
-                        </Box>
+                            </Box>
                     </Grid>
-                ))}  
+                ))}
+
             </Grid>
-      </Box>
+        </Box>
+            
     </Box>
   )
 } 

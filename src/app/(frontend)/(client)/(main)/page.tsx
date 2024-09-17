@@ -19,8 +19,8 @@ const page = () => {
       <Product/>
       <Testimonals/>
       <Slider/>
-      <Cases/>
-      <Contact/>
+      <Cases/> 
+    
     </Box>
   )
 }
