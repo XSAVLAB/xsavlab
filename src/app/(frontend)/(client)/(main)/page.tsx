@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react'
-import Service from '../common/Service';
+import Service from '@/components/Common/Service';
 import Box  from '@mui/material/Box';
 import Testimonals from '../common/Testimonals';
 import Slider from '../common/Slider';

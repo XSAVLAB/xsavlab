@@ -1,7 +1,7 @@
 'use client'
 
 import { FC } from "react";
-import Service from "@/components/Cases/Cases";
+import Service from "@/components/Service/Service";
 
 
 const page :FC = () => {

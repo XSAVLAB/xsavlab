@@ -1,0 +1,97 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("POSTGRES_PRISMA_URL")
+}
+enum Role {
+  USER
+  ADMIN
+  
+}
+// User Schema
+model User {
+  id          String   @id @default(uuid())
+  firstName   String
+  lastName    String?
+  email       String   @unique
+  phoneNumber String
+  password    String
+  role        Role     @default(USER) 
+  department  String  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  image       String?  
+  posts       BlogPost[]
+}
+model Client{
+  id        String   @id @default(uuid())
+  name      String   
+  email     String   @unique
+  createdAt DateTime @default(now())
+  description String
+  icon      String
+  cases     Cases[]  
+}
+model Services{
+  id            String   @id @default(uuid())
+  name          String   @unique
+  description   String
+  technologies  String[]
+  createdAt     DateTime @default(now())
+  icon          String
+}
+model BlogPost {
+  id        String   @id @default(uuid())
+  title     String
+  content   String   @db.Text 
+  userId    String
+  createdAt DateTime @default(now())
+  image     String
+  author    User     @relation(fields: [userId], references: [id]) 
+}
+
+model Cases{
+  id        String   @id @default(uuid())
+  industryType String
+  summary String    
+  services String[]
+  image String?
+  bgimage String
+  clientId  String 
+  client    Client   @relation(fields: [clientId], references: [id])
+}
+model ClientStories{
+  id        String   @id @default(uuid())
+  image String
+  title String
+  content String
+}
+model History{
+  id       Int    @id @default(autoincrement())
+  year     Int
+  content  String
+}
+model Contact{
+  id        Int    @id @default(autoincrement())
+  firstName String
+  lastName  String?
+  companyName String?
+  workEmail String
+  phoneNumber String
+  description String @db.Text
+}
+model Login{
+  id        Int    @id @default(autoincrement())
+  email       String 
+  loginAt   DateTime @default(now())
+  logouAt   DateTime?
+}

@@ -34,7 +34,7 @@ const Blog = (props: Props) => {
         {visibleBlogs < data.length && (
         <Button variant='text' className='blog-show-more-btn' onClick={showMoreBlogs}>Show more articles</Button>
         )}
-        <Subscribe/>
+        <Subscribe />
     </Box>
   )
 }
